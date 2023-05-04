@@ -1,16 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import PlantCard from "./PlantCard";
 
-function PlantList() {
-  const [plant,setPlant] = useState([]) 
-
-  useEffect( () => {
-    fetch("http://localhost:3000/plants")
-    .then(r => r.json())
-    .then(plants => setPlant(plants))  
-
-  })
-
+function PlantList({plant}) { 
+ 
   return (
     <ul className="cards">
       {plant.map((p) => {
