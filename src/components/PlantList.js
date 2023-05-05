@@ -1,7 +1,11 @@
 import React from "react";
 import PlantCard from "./PlantCard";
 
-function PlantList({plant}) { 
+function PlantList({plant,search}) { 
+
+  //console.log(search) 
+
+  
  
   return (
     <ul className="cards">
