@@ -19,13 +19,15 @@ function PlantPage() {
       setPlant([...plant,data])  
   }
 
-  
+  function handlePrice(id){
+    console.log("hey",plant.id)
+  }
 
   return (
     <main>
       <NewPlantForm onAddItem = {handleAddItem}/>
       <Search setSearch={setSearch}/> 
-      <PlantList plant={plant}  search={search}/>  
+      <PlantList handlePrice={handlePrice} plant={plant}  search={search}/>  
     </main>
   );
 }
