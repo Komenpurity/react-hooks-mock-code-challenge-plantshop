@@ -19,8 +19,8 @@ function PlantPage() {
       setPlant([...plant,data])  
   }
 
-  function handlePrice(id){
-    console.log("hey",plant.id)
+  function handlePrice(){
+    console.log("hey")
   }
 
   return (
